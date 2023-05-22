@@ -1,2 +1,2 @@
-# little-lemon-app
+# little-lemon
 Little Lemon Ordering App - Capstone
