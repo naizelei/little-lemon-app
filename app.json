@@ -4,15 +4,23 @@
     "slug": "little-lemon-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/little-lemon-logo-grey.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/little-lemon-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
+    "assetBundlePatterns": ["**/*"],
+    "fonts": [
+      {
+        "asset": "assets/fonts/Karla-Regular.ttf",
+        "font-style": "normal"
+      },
+      {
+        "asset": "assets/fonts/MarkaziText-Regular.ttf",
+        "font-style": "normal"
+      }
     ],
     "ios": {
       "supportsTablet": true
