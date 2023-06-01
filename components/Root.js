@@ -3,6 +3,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Onboarding from "./Onboarding";
 import Profile from "../screens/Profile";
+import Home from "../screens/Home";
 const Stack = createNativeStackNavigator();
 
 const Root = () => {
@@ -17,7 +18,20 @@ const Root = () => {
         name="Profile"
         component={Profile}
         options={{
-          headerLeftLabelVisible: false,
+          headerLeftVisible: false,
+          headerTitle: () => (
+            <Image
+              style={{ width: 150, height: 50 }}
+              resizeMode="contain"
+              source={require("../assets/Logo.png")}
+            />
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{
           headerTitle: () => (
             <Image
               style={{ width: 150, height: 50 }}
